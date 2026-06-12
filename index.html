@@ -508,8 +508,7 @@ footer{
 
 <body>
 
-<div id="welcomeModal" class="modal">
-    <div class="modal-content">
+    <div class="modal" id="welcomeModal">
 
         <h1>Hey there, I'm Jenifer</h1>
 
@@ -517,9 +516,7 @@ footer{
 
         <p>Welcome to my portfolio !!!</p>
 
-        <button id="enterBtn">
-            Discover - My Journey
-        </button>
+        <button id="enterBtn">Discover My Journey</button>
 
     </div>
 </div>
@@ -750,18 +747,15 @@ sections.forEach(section => {
     observer.observe(section);
 });
 
-
 // Welcome popup
 <script>
 
-const menu = document.getElementById("menu-toggle");
-const nav = document.getElementById("nav-links");
+const enterBtn = document.getElementById("enterBtn");
+const modal = document.getElementById("welcomeModal");
 
-menu.addEventListener("click", () => {
-    nav.classList.toggle("active");
+enterBtn.addEventListener("click", () => {
+    modal.style.display = "none";
 });
-
-</script>
 
 </script>
     
