@@ -436,34 +436,14 @@ body{
         text-decoration:none;
         font-weight:600;
     }
-    .resume-float{
-    position:fixed;
-
-    bottom:30px;
-    right:30px;
-
-    padding:15px 25px;
-
-    border-radius:50px;
-
-    background:rgb(134,196,188);
-
-    color:white;
-
-    text-decoration:none;
-
-    font-weight:600;
-
-    box-shadow:0 8px 20px rgba(0,0,0,0.15);
-
-    z-index:99999;
-
-    transition:.3s ease;
-}
-
-.resume-float:hover{
-    transform:translateY(-5px);
-}
+   .resume-card{
+    background:rgb(194,220,217);
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    margin:50px auto;
+    max-width:700px;
+    }
 }
 
 footer{
@@ -506,7 +486,6 @@ footer{
         <a href="#about">About Me |</a>
         <a href="#skills"> Skills |</a>
         <a href="#projects"> Projects |</a>
-        <a href="#certifications"> Certifications |</a>
         <a href="#contact"> Contact</a>
     </div>
 
@@ -639,6 +618,24 @@ footer{
 
 </section>
 
+<section id="resume">
+
+    <h2>Let's Work Together</h2>
+
+    <p>
+        I'm actively seeking opportunities in Data Analytics.
+        Feel free to explore my resume for a detailed overview of my skills,
+        projects and certifications.
+    </p>
+
+    <br><br>
+
+    <a href="Resume_Jenifer.pdf" download class="btn">
+        🚀 View Resume
+    </a>
+
+</section>
+
 
 <!-- CERTIFICATIONS -->
 
@@ -726,10 +723,6 @@ if(modal && enterBtn){
 <footer>
     © 2026 Jenifer | Data Analyst Portfolio
 </footer>
-    
-<a href="Resume_Jenifer.pdf" download class="resume-float">
-    📄 Resume
-</a>
     
 </body>
 </html>
