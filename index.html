@@ -427,46 +427,38 @@ body{
     font-weight:700;
     }
 
-    .menu-toggle{
-    font-size:2rem;
-    cursor:pointer;
-    color:white;
-}
+    nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
 
-    .nav-links{
-        position:fixed;
-    
-        top:0;
-        right:-100%;
-    
-        width:100%;
-        height:100vh;
-    
-        background:rgb(134,196,188);
-    
-        display:flex;
-        flex-direction:column;
-    
-        justify-content:center;
-        align-items:center;
-    
-        gap:40px;
-    
-        transition:.5s ease;
-    
-        z-index:999998;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 50px;
+
+    background:rgb(134,196,188);
+
+    z-index:999999;
     }
-
+    
+    .nav-links{
+        display:flex;
+        gap:45px;
+    }
+    
     .nav-links a{
-        font-size:2rem;
         text-decoration:none;
         color:white;
         font-weight:600;
-        letter-spacing:2px;
     }
     
-    .nav-links.active{
-        right:0;
+    .logo{
+        color:white;
+        font-size:1.2rem;
+        font-weight:700;
     }
     
    .resume-card{
@@ -510,32 +502,34 @@ footer{
 
     <div class="modal" id="welcomeModal">
 
-        <h1>Hey there, I'm Jenifer</h1>
+    <div class="modal-content">
 
-        <p>Data Analyst who loves turning numbers into insights that drive smarter decisions</p>
+        <h1>I'm Jenifer</h1>
 
-        <p>Welcome to my portfolio !!!</p>
+        <p>Love turning raw data into actionable insights.</p>
 
-        <button id="enterBtn">Discover My Journey</button>
+        <button id="enterBtn">
+            Discover My Journey
+        </button>
 
     </div>
-</div>
-
-<div class="menu-toggle" id="menu-toggle">
-    ☰
-</div>
-
-<div class="nav-links" id="nav-links">
-
-    <a href="#about">About Me</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#resume">Resume</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#contact">Contact</a>
 
 </div>
 
+<nav>
+
+    <div class="logo">
+        ◢ EXEC JeniferPortfolio
+    </div>
+
+    <div class="nav-links">
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+</nav>
 
 <section class="hero">
 
@@ -748,14 +742,14 @@ sections.forEach(section => {
 });
 
 // Welcome popup
-<script>
 
-const enterBtn = document.getElementById("enterBtn");
-const modal = document.getElementById("welcomeModal");
+    <script>
 
-enterBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-});
+document.getElementById("enterBtn").onclick = function(){
+
+    document.getElementById("welcomeModal").style.display = "none";
+
+};
 
 </script>
     
