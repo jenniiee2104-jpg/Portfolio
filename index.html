@@ -507,17 +507,16 @@ body{
     .contact-icons{
     display:flex;
     justify-content:center;
+    align-items:center;
     gap:25px;
+    margin-top:20px;
     }
     
-    .mail-icon,
-    .linkedin-icon{
-        width:18px !important;
-        height:18px !important;
-    }
-    
-    .contact-icons img:hover{
-        transform:translateY(-5px) scale(1.1);
+    .contact-icons img{
+        width:30px;
+        height:30px;
+        object-fit:contain;
+        display:block;
     }
 
 }
